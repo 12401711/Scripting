@@ -8,3 +8,5 @@ let dayPeriod = uur < 12 ? "voormiddag" : "namiddag";
 console.log(tijd)
     alert("Het is " + dayPeriod + " en " + uur + ":" + minuten + " uur!");
 
+
+
