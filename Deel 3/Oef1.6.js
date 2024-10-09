@@ -9,7 +9,7 @@ switch (vraag.toUpperCase()) {
         uitkomst = "Jammer, blijf dan maar liggen";
         break;
 
-        default:
+    default:
         uitkomst = "Dat was niet duidelijk, antwoord je vanuit je luie zetel?";
 }
 document.getElementById("resultaat").innerHTML = uitkomst;
