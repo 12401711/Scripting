@@ -1,6 +1,6 @@
 let vraag = prompt("Gaat u graag sporten?");
 
-if (vraag === "ja") {
+if (vraag === "ja", "Ja") {
     alert("Just do it!");
 }
 else{
