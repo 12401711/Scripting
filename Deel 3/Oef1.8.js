@@ -3,14 +3,36 @@ let uur = tijd.getHours();
 let minuten = tijd.getMinutes();
 
 let dayPeriod;
-switch (true) {
-    case (uur >= 7 && uur < 12):
-       dayPeriod = "Goedemorgen";
-        break;
-    case (uren >= 12 && uren < 18):
-        dayPeriod = "Goede dag";
-        break;
-    default:
-        dayPeriod = "Goede avond";
+if (uur >= 7 && uur < 12) {
+    dayPeriod = 'Goedemorgen';
+} else if (uur >= 12 && uur < 18) {
+    dayPeriod = 'Goede dag';
+} else {
+    dayPeriod = 'Goede avond';
 }
-document.getElementById("welkomsbericht").innerHTML = dayPeriod + " het is " + uur + ":" + minuten + "!";
+
+let dag;
+switch (new Date().getDay()) {
+    case 0:
+        dag = "zondag";
+        break;
+    case 1:
+        dag = "maandag";
+        break;
+    case 2:
+        dag = "dinsdag";
+        break;
+    case 3:
+        dag = "woensdag";
+        break;
+    case 4:
+        dag = "donderdag";
+        break;
+    case 5:
+        dag = "vrijdag";
+        break;
+    case 6:
+        dag = "zaterdag";
+}
+
+document.getElementById("welkomsbericht").innerHTML = dayPeriod +": vandaag zijn we " + dag +" en het is " + uur + ":" + minuten + "!";
