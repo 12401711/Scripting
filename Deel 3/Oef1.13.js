@@ -6,7 +6,7 @@ if (getal > 0 && getal <= 10) {
 
     let teller = 1;
     while (teller <= getal) {
-        let spatie = "&nbsp".repeat(getal - teller);
+        let spatie = "&nbsp;".repeat(getal - teller);
         antwoord += spatie + "#".repeat(teller) + "<br>";
         teller++;
     }
