@@ -10,8 +10,8 @@ const mijnGegevens = {
 };
 
 
-const gegevensArray = Object.entries(mijnGegevens);
-console.log(gegevensArray);
+const persoonArray = Object.values(mijnGegevens);
+console.log(persoonArray);
 
 const tbody = document.getElementById("gegevensTabel").querySelector("tbody");
 
